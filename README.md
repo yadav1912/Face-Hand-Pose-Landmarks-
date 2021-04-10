@@ -1,8 +1,11 @@
 # Face-Hand-Pose-Landmarks-
+
 import mediapipe as mp
 import cv2
 import cv2
+
 # Real Time WEbcam Feed
+
 cap = cv2.VideoCapture(0)
 while True:
     ret, frame = cap.read()
@@ -14,9 +17,7 @@ while True:
 cap.release()
 cv2.destroyAllWindows()
 
-# Detect Facial Landmarks
-# Detect Hand Poses
-# Detect Body Poses
+# Detect Facial,Hand & Pose Landmarks
 
 cap = cv2.VideoCapture(0)
 # Initiate holistic model
